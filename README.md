@@ -5,11 +5,11 @@ We aim to modify the work done by Liuhao Ge and produce better optimizations to 
 
 *Right side shows the Prediction of Hand-Joints. 
 Left-side shows the point cloud representation of deph images*
-![ Joint Prediction from TSDF ](Docs\res\Prediction.gif)  
+![Prediction](https://user-images.githubusercontent.com/57672011/150638961-92ff3774-dc26-48bd-8ae5-427e832e0445.gif)
 
 ## Depth Image to Volumetric Conversion
 
-![ Joint Prediction from TSDF ](Docs\res\Depth_to_TSDF.PNG) 
+![Depth_to_TSDF](https://user-images.githubusercontent.com/57672011/150638915-6771eab7-eead-44b1-aa5d-6696ccbca3d8.PNG) 
 
 ### Depth Image
 In our project depth images from the NYU dataset were used for conversion into volume. The depth images were collected from Microsoft Kinect V2. The link to the open source dataset is given below:
