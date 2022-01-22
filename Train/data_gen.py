@@ -3,6 +3,8 @@ import pandas as pd
 import h5py
 import torch
 
+
+# This is an comment
 class Generator():
     def __init__(self):
       #  pass path to 30 point ground truth
@@ -12,7 +14,6 @@ class Generator():
         h5 = h5py.File(filename,'r')
         input = np.array(h5['TSDF'])
         input = np.reshape(input,(1,1,32,32,32))
-                # VSTOXX futures data
         h5.close()           
         inputs = np.array(input).tolist()
         inputs = torch.FloatTensor(inputs)
