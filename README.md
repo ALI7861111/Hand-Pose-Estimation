@@ -34,6 +34,23 @@ Occupancy Grid is a binary grid in 3D space, representing the voxels that have a
 
 A Signed Distance Field (SDF) of a 3D space stores a distance value in each voxel and is found out by calculating the distance from the voxel center and each point in the point cloud and storing the minimum distance value in the voxel. The voxels in front of the boundary of the point have different signs than the voxels that are inside the point cloud. This value increases as the voxels move further away from the point. The value increases indefinitely without bounds if the voxels are too far away. This can be mitigated by applying a truncation value condition on the signed distance function and that’s where the name of the truncated signed distance function comes from. The truncation value determines how big the values have to be, to be assigned as unity
 
+### *How to Clone all the research work i.e. data and trained models*
+
+
+``` bash
+#  Make sur eyou have dvc installed. It is installed by  ' pip install dvc '
+
+git clone https://github.com/ALI7861111/Hand-Pose-Estimation.git
+
+cd Hand-Pose-Estimation 
+
+dvc pull
+
+# Unzip the TSDF.zip file
+
+````
+
+
 
 ### *How to Create TSDF from Depth Images*
 1. Download all the depth images put them into a single folder. The depth images used for this project were taken from NYU dataset. 
@@ -84,7 +101,7 @@ train(net=model,  model_name_and_path= 'path/name_of_model' )
 ```
 
 
-## $Refrences$:
+## Refrences:
 
 Real-time 3D Hand Pose Estimation
 with 3D Convolutional Neural Networks
